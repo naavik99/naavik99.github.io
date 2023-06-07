@@ -1,51 +1,60 @@
- <!DOCTYPE html>
-<html>
-<head>
-  <!-- Page Title -->
-  <title>Navigator - Home</title>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Navbar Menu Hover Effect</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<h1 class="intro">Hi. I'm Sahil, aka the</h1>
+		<h1 class="navigator">Navigator :)</h1>
+		<h3 class="intro">I'm passionate about many things, so I thought I'd put them all in one place. Use the navigation bar below to explore. Safe travels!</h3>
+		<nav>
+			<a href="#">
+				<span class="icon">
+					<ion-icon name="home-outline"></ion-icon>
+				</span>
+				<span id="tooltip">Home</span>
+			</a>
+			<a href="#">
+				<span class="icon">
+					<ion-icon name="information-circle-outline"></ion-icon>
+				</span>
+				<span id="tooltip">About</span>
+			</a>
+			<a href="#">
+				<span class="icon">
+					<ion-icon name="folder-open-outline"></ion-icon>
+				</span>
+				<span id="tooltip">Projects</span>
+			</a>
+			<a href="#">
+				<span class="icon">
+					<ion-icon name="musical-notes-outline"></ion-icon>
+				</span>
+				<span id="tooltip">Music</span>
+			</a>
+			<a href="#">
+				<span class="icon">
+					<ion-icon name="call-outline"></ion-icon>
+				</span>
+				<span id="tooltip">Contact</span>
+			</a>
+			<div class="animation start-home"></div>
+			<div class="indicator"></div>
+		</nav>
+<!-- 		<div class="text">
+			<span>Home</span>
+			<span>About</span>
+			<span>Projects</span>
+			<span>Music</span>
+			<span>Contact</span>
+		</div> -->
+<!-- 		<div class="subway-line-main"></div>
+		<div class="subway-line-two"></div> -->
+		<!-- <img src="images/homeworld-music.svg" alt="Homeworld Music logo" class="img-center"> -->
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.3.0/web/hack.min.css">
-
-  <!-- Favicon Stuff -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-</head>
-<body>
-
-  <pre>
-                                                                                                ██╗   
-                                                                                                ╚██╗  
-█████╗█████╗█████╗█████╗█████╗█████╗█████╗█████╗█████╗█████╗█████╗█████╗█████╗█████╗█████╗█████╗ ╚██╗ 
-╚════╝╚════╝╚════╝╚════╝╚════╝╚════╝╚════╝╚════╝╚════╝╚════╝╚════╝╚════╝╚════╝╚════╝╚════╝╚════╝ ██╔╝ 
-                                                                                                ██╔╝  
-                                                                                                ╚═╝   
-                                                                                                      
-████████╗██╗  ██╗███████╗    ███╗   ██╗ █████╗ ██╗   ██╗██╗ ██████╗  █████╗ ████████╗ ██████╗ ██████╗ 
-╚══██╔══╝██║  ██║██╔════╝    ████╗  ██║██╔══██╗██║   ██║██║██╔════╝ ██╔══██╗╚══██╔══╝██╔═══██╗██╔══██╗
-   ██║   ███████║█████╗      ██╔██╗ ██║███████║██║   ██║██║██║  ███╗███████║   ██║   ██║   ██║██████╔╝
-   ██║   ██╔══██║██╔══╝      ██║╚██╗██║██╔══██║╚██╗ ██╔╝██║██║   ██║██╔══██║   ██║   ██║   ██║██╔══██╗
-   ██║   ██║  ██║███████╗    ██║ ╚████║██║  ██║ ╚████╔╝ ██║╚██████╔╝██║  ██║   ██║   ╚██████╔╝██║  ██║
-   ╚═╝   ╚═╝  ╚═╝╚══════╝    ╚═╝  ╚═══╝╚═╝  ╚═╝  ╚═══╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝
-                                                                                                      
-  ██╗                                                                                                 
- ██╔╝                                                                                                 
-██╔╝ █████╗█████╗█████╗█████╗█████╗█████╗█████╗█████╗█████╗█████╗█████╗█████╗█████╗█████╗█████╗█████╗ 
-╚██╗ ╚════╝╚════╝╚════╝╚════╝╚════╝╚════╝╚════╝╚════╝╚════╝╚════╝╚════╝╚════╝╚════╝╚════╝╚════╝╚════╝ 
- ╚██╗ 
-  ╚═╝
-  </pre>
-  <p>Copyright © 2023 LOLOLOL</p>
-  <hr>
-  <br>
-  <a href="https://www.w3schools.com">Visit W3Schools.com!</a><br>
-  <a href="https://www.w3schools.com">Visit W3Schools.com!</a><br>
-  <a href="test.html">Test</a><br>
-  <a href="projects/greta/SA_8905_GeoVis_Greta_Thunberg's_Voyage_Mapped.html">Greta</a><br>
-  <br>
-  <hr>
-</body>
-</html> 
+	</body>
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
