@@ -1,0 +1,209 @@
+
+body {
+	font-family: 'Century Gothic', sans-serif;
+	background: #008080;
+	margin: 0 0 0 0;
+}
+
+h1.intro{
+	font-family: 'Century Gothic', sans-serif;
+	position: relative;
+	width: 450px;
+	margin: 250px auto 0;
+	text-align: center;
+	color: white;
+}
+
+h3.intro{
+	font-family: 'Century Gothic', sans-serif;
+	position: relative;
+	width: 450px;
+	margin: 10px auto 0;
+	text-align: center;
+	color: white;
+}
+
+h1.navigator{
+	font-family: 'Century Gothic', sans-serif;
+	margin: 0px auto 0;
+	width: 450px;
+	text-align: center;
+	color: #122726;
+}
+
+
+h4.text {
+	font-family: 'Century Gothic', sans-serif;
+	position: relative;
+	width: 500px;
+	margin: 10px auto 0;
+	text-align: center;
+	color: white;
+}
+
+/*div.subway-line-main {
+	background-color: #122726;
+	width: 100%;
+	height: 50px;
+	margin: -50px 0 0 0;
+	z-index: -1;
+}*/
+
+/*div.subway-line-two {
+	background-color: #122726;
+	width: 50px;
+	height: 100px;
+	margin: 0px 0 0 1500px;
+	z-index: -2;
+}*/
+
+nav {
+	position: relative;
+	margin: 25px auto 0;
+	width: 450px;
+	height: 50px;
+	background: #122726;
+	border-radius: 25px;
+	font-size: 0;
+	box-shadow: : 0 2px 3px 0 rgba(0,0,0,0.1);
+}
+
+div {
+	position: relative;
+	font-size: 16px;
+	text-align: center;
+}
+
+/*div.text {
+	margin: 25px auto 0;
+	width: 450px;
+	height: 50px;
+}*/
+
+/*Navigation Bar Links & Tooltips*/
+
+nav a{
+	font-size: 25px;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+	line-height: 57px;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	text-align: center;
+}
+
+nav a #tooltip{
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translateX(-50%);
+	background-color: #122726;
+	color: #fff;
+	white-space: nowrap;
+	padding: 10px;
+	border-radius: 7px;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+	line-height: 20px;
+}
+
+nav a #tooltip::before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: -70%;
+	transform: translateX(-50%);
+	border: 15px solid;
+	border-color: #0000 #0000 #122726 #0000;
+}
+
+a:hover #tooltip {
+	top: 130%;
+	visibility: visible;
+	opacity: 1;
+	font-size: 14px;
+}
+
+a:hover span {
+	color: #122726;
+	transition: all .5s ease .25s;
+}
+
+/*Animation*/
+
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	width: 50px;
+	border-radius: 8px;
+	transition: all .5s ease 0s;
+}
+
+
+a:nth-child(1){
+	width: 50px;
+}
+
+nav .start-about,a:nth-child(1):hover~.animation {
+	width: 50px;
+	left: 0;
+	background: #FFCB0C;
+}
+
+a:nth-child(2){
+	width: 150px;
+}
+
+nav .start-projects,a:nth-child(2):hover~.animation {
+	width: 50px;
+	left: 100px;
+	background: #16A753;
+}
+
+
+a:nth-child(3){
+	width: 50px;
+}
+
+nav .start-portfolio,a:nth-child(3):hover~.animation {
+	width: 50px;
+	left: 200px;
+	background: #1F99D5;
+}
+
+a:nth-child(4){
+	width: 150px;
+}
+
+nav .start-contact,a:nth-child(4):hover~.animation {
+	width: 50px;
+	left: 300px;
+	background: #B32078;
+}
+
+a:nth-child(5){
+	width: 50px;
+}
+
+nav .start-home,a:nth-child(5):hover~.animation {
+	width: 50px;
+	left: 400px;
+	background: #F87005;
+	border-radius: 50%;
+}
+
+
+
+
+.img-center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 10%;
+}
