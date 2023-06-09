@@ -1,10 +1,12 @@
-
+/*Body styling*/
 body {
 	font-family: 'Century Gothic', sans-serif;
 	background: #008080;
 	margin: 0 0 0 0;
 }
 
+
+/*Headings styling*/
 h1.intro{
 	font-family: 'Century Gothic', sans-serif;
 	position: relative;
@@ -57,6 +59,8 @@ h4.text {
 	z-index: -2;
 }*/
 
+
+/*Navbar styling*/
 nav {
 	position: relative;
 	margin: 25px auto 0;
@@ -73,14 +77,6 @@ div {
 	font-size: 16px;
 	text-align: center;
 }
-
-/*div.text {
-	margin: 25px auto 0;
-	width: 450px;
-	height: 50px;
-}*/
-
-/*Navigation Bar Links & Tooltips*/
 
 nav a{
 	font-size: 25px;
@@ -145,7 +141,6 @@ nav .animation {
 	transition: all .5s ease 0s;
 }
 
-
 a:nth-child(1){
 	width: 50px;
 }
@@ -166,7 +161,6 @@ nav .start-home,a:nth-child(2):hover~.animation {
 	background: #16A753;
 	border-radius: 50%;
 }
-
 
 a:nth-child(3){
 	width: 50px;
@@ -199,8 +193,7 @@ nav .start-contact,a:nth-child(5):hover~.animation {
 }
 
 
-
-
+/*Image styling*/
 .img-center {
 	display: block;
 	margin-left: auto;
