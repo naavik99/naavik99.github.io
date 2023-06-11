@@ -1,7 +1,8 @@
-/*Body styling*/
-body {
-	font-family: 'Century Gothic', sans-serif;
-	background: #008080;
+/*Html styling*/
+html {
+	background-image: linear-gradient(#008080, #153737);
+	width: auto;
+	height: auto;
 	margin: 0 0 0 0;
 }
 
@@ -63,6 +64,7 @@ h4.text {
 nav {
 	position: relative;
 	margin: 25px auto 0;
+	margin-bottom: 50px;
 	width: 450px;
 	height: 50px;
 	background: #122726;
@@ -192,6 +194,73 @@ nav .start-contact,a:nth-child(5):hover~.animation {
 }
 
 
+/*Music releases grid styling*/
+.music-grid {
+	font-family: 'Century Gothic', sans-serif;
+	width: 800px;
+	margin: 25px auto 0;
+	color: #122726;
+	display: grid;
+	grid-template-columns: 400px 400px;
+}
+
+.music-grid .box {
+	border-radius: 25px;
+	background: #fff;
+	width: 400px;
+	height: 400px;
+}
+
+.music-grid .box p{
+	font-family: 'Century Gothic', sans-serif;
+	font-size: 14px;
+	color: #122726;
+	text-align: left;
+	margin: 0 25px;
+}
+
+.music-grid .box li{
+	font-family: 'Century Gothic', sans-serif;
+	font-size: 14px;
+	color: #122726;
+	text-align: left;
+	margin: 0 25px;
+}
+
+
+.music-grid .image-box {
+	width: 400px;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.music-grid .image-box img {
+	width: 350px;
+	height: 350px;
+	border-radius: 25px;
+}
+
+.music-icon {
+	padding: 0 5px;
+	position: relative;
+	display: inline-block;
+}
+
+.music-icon a{
+	font-size: 25px;
+	color: #122726;
+}
+
+.music-icon a:hover {
+	color: teal;
+	cursor: pointer;
+}
+
+
+
+
 /*Image styling*/
 .img-center {
 	display: block;
@@ -199,3 +268,5 @@ nav .start-contact,a:nth-child(5):hover~.animation {
 	margin-right: auto;
 	width: 10%;
 }
+
+

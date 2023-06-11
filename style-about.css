@@ -1,7 +1,8 @@
-/*Body styling*/
-body {
-	font-family: 'Century Gothic', sans-serif;
-	background: #008080;
+/*Html styling*/
+html {
+	background-image: linear-gradient(#008080, #153737);
+	width: 100vw;
+	height: 100vh;
 	margin: 0 0 0 0;
 }
 
@@ -24,15 +25,6 @@ h3.intro{
 	text-align: center;
 	color: white;
 }
-
-h1.navigator{
-	font-family: 'Century Gothic', sans-serif;
-	margin: 0px auto 0;
-	width: 450px;
-	text-align: center;
-	color: #122726;
-}
-
 
 h4.text {
 	font-family: 'Century Gothic', sans-serif;
@@ -192,6 +184,31 @@ nav .start-contact,a:nth-child(5):hover~.animation {
 	background: #F87005;
 }
 
+
+/*About text styling*/
+.about {
+	font-family: 'Century Gothic', sans-serif;
+	position: relative;
+	width: 450px;
+	margin: 25px auto 0;
+	text-align: center;
+	color: white;
+	display: flex;
+	justify-content: center;
+}
+
+.motto {
+	font-family: 'Century Gothic', sans-serif;
+	position: relative;
+	width: 450px;
+	margin: 25px auto 0;
+	text-align: center;
+	color: white;
+	display: flex;
+	justify-content: center;
+	font-style: italic;
+	font-weight: bold;
+}
 
 /*Image styling*/
 .img-center {
