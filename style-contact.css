@@ -35,6 +35,8 @@ p.intro{
 	color: white;
 }
 
+}
+
 h1.navigator{
 	font-family: 'Century Gothic', sans-serif;
 	margin: 0px auto 0;
@@ -202,6 +204,26 @@ nav .start-home,a:nth-child(5):hover~.animation {
 	border-radius: 50%;
 }
 
+.contact {
+	margin: 25px auto 0;
+	display: block;
+	position: relative;
+	justify-content: center;
+	text-align: center;
+	width: 450px;
+	height: auto;
+}
+
+.contact-links {
+	color: white;
+	font-family: 'Century Gothic', sans-serif;
+	position: relative;
+	width: 450px;
+	margin: 25px auto 0;
+	text-align: center;
+	color: white;
+	justify-content: center;
+}
 
 /*Image styling*/
 .img-center {

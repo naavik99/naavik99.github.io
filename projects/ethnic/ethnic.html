@@ -1,0 +1,178 @@
+
+<!--
+CODG136 Assignment 3
+Instructor: Jonathan Critchley. Ryerson University
+Created by: Sahil Parikh
+Date: December 10, 2017
+Web Map Title: Ethnic Group Percent Populations in U.S. Metropolitan Statistical Areas, 2000
+-->
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset=utf-8 />
+
+    <title>CODG136 Assignment 3: Ethnic Group Percent Populations in U.S. Metropolitan Statistical Areas, 2000</title>
+
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+    <!--Load Leaflet CSS document-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+
+    <!--Load Leaflet API-->    
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+
+    <!--Load Esri Leaflet from CDN loading US states feature layer -->
+    <script src="https://unpkg.com/esri-leaflet@2.1.1/dist/esri-leaflet.js"
+    integrity="sha512-ECQqaYZke9cSdqlFG08zSkudgrdF6I1d8ViSa7I3VIszJyVqw4ng1G8sehEXlumdMnFYfzY0tMgdQa4WCs9IUw=="
+    crossorigin=""></script>
+
+    <!--Load jQuery library for Panel Control styling-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*Map Styling*/
+        #map {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        /*Styling for top left control panel*/
+        .leaflet-control-layers-expanded {
+            color: white;
+            background-color: #8B0000;
+            font-family: 'Trebuchet MS',Helvetica,sans-serif;
+        }
+
+        /*Styling for bottom left information box*/
+        section {
+            position: absolute;
+            left: 15px;
+            bottom: 15px;
+            width: 500px;
+            padding: 0px 15px;
+            background: rgba(139, 0, 0, 1);
+            border: 1px solid black;
+            border-radius: 3px;
+            font-family: 'Trebuchet MS',Helvetica,sans-serif;
+            color: rgba(256, 256, 256, 1);
+            z-index: 800;
+        }
+
+        p {
+            font-size: .9em;
+            line-height: 1.5em;
+        }   
+
+    </style>
+
+    <script type="text/javascript">
+
+    //Add a title to the top left control panel
+ 	$(document).ready(function() {
+ 	$('.leaflet-control-layers-toggle').after('<div align = center><h2><u>Ethnic Groups</u></h2></div>')
+	});
+
+    </script>
+
+</head>
+
+<body>
+
+    <div id='map'></div>
+
+    <!--Add a title and text to the bottom left information box, explaining purpose of map-->
+    <section>
+        <h2><center>Ethnic Group Percent Populations in U.S. Metropolitan Statistical Areas, 2000<center></h2>
+        <p>This web map allows you to cycle through different layers of U.S. ethnic group populations (% of total population) in Metropolitan Statistical Areas (MSAs). You can toggle a state border layer to view them better. Percent population layer data used in this map can be found at: <a href='http://sedac.ciesin.columbia.edu/maps/services#U.S. Census Grids' style='color:white'>Socioeconomic Data and Applications Centre (SEDAC)</a></p>  
+    </section>
+
+    <script>
+
+    //Center map on US and zoom in
+    var map = L.map('map', {
+        center: [37, -96],
+        zoom: 5
+    });
+
+    //Load the OpenStreetMap.BlackAndWhite tiles from https://leaflet-extras.github.io/leaflet-providers/preview/ 
+    L.tileLayer('http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+
+    //Create variable 'basemaps' to contain five ethnic group population .wms layers
+    //Ethnic groups are: White, Black, Hispanic/Latino, Asian, Native American
+    var basemaps = {
+        White: L.tileLayer.wms('http://sedac.ciesin.columbia.edu/geoserver/gwc/service/wms?', {
+            layers: 'usgrid:usgrid-summary-file1-2000-msa_pctwhite-2000',
+            format: 'image/png',
+            transparent: true,
+            attribution: '<a href="http://sedac.ciesin.columbia.edu/maps/services#U.S. Census Grids">Socioeconomic Data and Applications Center (SEDAC)</a>',
+            opacity: 0.75,
+        }),
+
+       'Black': L.tileLayer.wms('http://sedac.ciesin.columbia.edu/geoserver/gwc/service/wms?', {
+            layers: 'usgrid:usgrid-summary-file1-2000-msa_pctblack-2000',
+            format: 'image/png',
+            transparent: true,
+            opacity: 0.75,
+        }),
+
+        'Hispanic/Latino': L.tileLayer.wms('http://sedac.ciesin.columbia.edu/geoserver/gwc/service/wms?', {
+            layers: 'usgrid:usgrid-summary-file1-2000-msa_pcthispanic-2000',
+            format: 'image/png',
+            transparent: true,
+            opacity: 0.75,
+        }),
+
+        'Asian': L.tileLayer.wms('http://sedac.ciesin.columbia.edu/geoserver/gwc/service/wms?', {
+            layers: 'usgrid:usgrid-summary-file1-2000-msa_pctasian-2000',
+            format: 'image/png',
+            transparent: true,
+            opacity: 0.75,
+        }),
+
+        'Native American': L.tileLayer.wms('http://sedac.ciesin.columbia.edu/geoserver/gwc/service/wms?', {
+            layers: 'usgrid:usgrid-summary-file1-2000-msa_pctnativeamerican-2000',
+            format: 'image/png',
+            transparent: true,
+            opacity: 0.75,
+        })
+    };
+
+    //Add an ESRI U.S. states layer to the map and style it
+    var states = L.esri.featureLayer({
+        url: "https://sampleserver6.arcgisonline.com/arcgis/rest/services/Census/MapServer/3",
+        style: function (feature) {
+            return {color: '#000000', weight: 1, fill: false};
+        }
+    });
+
+    //Add attribution for ESRI layer
+    map.attributionControl.addAttribution('<a href="https://sampleserver6.arcgisonline.com/arcgis/rest/services/Census/MapServer/3">ArcGIS REST Services Directory</a>');
+
+    //Add ESRI U.S. states layer to 'overlays' layer so that it can be turned on and off
+    var overlays = {
+    	"Turn U.S. State Borders On/Off": states
+    };
+
+    //Add built-in Leaflet control panel to the map with 'basemaps' and 'overlays'
+    L.control.layers(basemaps, overlays, {collapsed: false}).addTo(map);
+    //Turn White ethnic group .wms layer on by default
+    basemaps.White.addTo(map);
+
+    </script>
+
+</body>
+
+</html>

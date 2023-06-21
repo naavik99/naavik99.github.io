@@ -212,8 +212,16 @@ nav .start-contact,a:nth-child(5):hover~.animation {
 
 /*Image styling*/
 .img-center {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 10%;
+	position: relative;
+	width: 450px;
+	margin: 0 auto 0;
+	display: flex;
+	justify-content: center;
+}
+
+.img-center img {
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	margin: 25px;
 }

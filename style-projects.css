@@ -186,15 +186,51 @@ nav .start-contact,a:nth-child(5):hover~.animation {
 
 
 /*Projects text styling*/
+
 .projects {
+	margin: 25px auto 0;
+	display: block;
+	position: relative;
+	justify-content: center;
+	text-align: center;
+	width: 550px;
+	height: auto;
+}
+
+.project-text {
 	font-family: 'Century Gothic', sans-serif;
 	position: relative;
 	width: 450px;
 	margin: 25px auto 0;
 	text-align: center;
 	color: white;
+	justify-content: center;
+}
+
+
+/*.btn {
+	font-family: 'Century Gothic', sans-serif;
+	width: 250px;
+	color: white;
 	display: flex;
 	justify-content: center;
+	background-color: #122726;
+}*/
+
+.project-links {
+	color: white;
+	font-family: 'Century Gothic', sans-serif;
+	position: relative;
+	width: 450px;
+	margin: 25px auto 0;
+	text-align: center;
+	color: white;
+	justify-content: center;
+}
+
+.project-links:hover {
+	color: #122726;
+	cursor: pointer;
 }
 
 
