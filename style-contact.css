@@ -9,7 +9,7 @@ html {
 
 /*Headings styling*/
 h1.intro{
-	font-family: 'Century Gothic', sans-serif;
+	font-family: 'ClearviewHwy', sans-serif;
 	position: relative;
 	width: 450px;
 	margin: 250px auto 0;
@@ -18,7 +18,7 @@ h1.intro{
 }
 
 h3.intro{
-	font-family: 'Century Gothic', sans-serif;
+	font-family: 'ClearviewHwy', sans-serif;
 	position: relative;
 	width: 450px;
 	margin: 10px auto 0;
@@ -27,7 +27,7 @@ h3.intro{
 }
 
 p.intro{
-	font-family: 'Century Gothic', sans-serif;
+	font-family: 'ClearviewHwy', sans-serif;
 	position: relative;
 	width: 450px;
 	margin: 25px auto 0;
@@ -38,7 +38,7 @@ p.intro{
 }
 
 h1.navigator{
-	font-family: 'Century Gothic', sans-serif;
+	font-family: 'ClearviewHwy', sans-serif;
 	margin: 0px auto 0;
 	width: 450px;
 	text-align: center;
@@ -47,7 +47,7 @@ h1.navigator{
 
 
 h4.text {
-	font-family: 'Century Gothic', sans-serif;
+	font-family: 'ClearviewHwy', sans-serif;
 	position: relative;
 	width: 500px;
 	margin: 10px auto 0;
