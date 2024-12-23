@@ -9,7 +9,7 @@ html {
 
 /*Headings styling*/
 h1.intro{
-	font-family: 'Century Gothic', sans-serif;
+	font-family: 'ClearviewHwy', sans-serif;
 	position: relative;
 	width: 450px;
 	margin: 250px auto 0;
@@ -18,7 +18,7 @@ h1.intro{
 }
 
 h3.intro{
-	font-family: 'Century Gothic', sans-serif;
+	font-family: 'ClearviewHwy', sans-serif;
 	position: relative;
 	width: 450px;
 	margin: 10px auto 0;
@@ -27,7 +27,7 @@ h3.intro{
 }
 
 h4.text {
-	font-family: 'Century Gothic', sans-serif;
+	font-family: 'ClearviewHwy', sans-serif;
 	position: relative;
 	width: 500px;
 	margin: 10px auto 0;
@@ -72,7 +72,7 @@ div {
 
 nav a{
 	font-size: 25px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'ClearviewHwy', sans-serif;
 	text-transform: uppercase;
 	color: white;
 	text-decoration: none;
@@ -187,7 +187,7 @@ nav .start-contact,a:nth-child(5):hover~.animation {
 
 /*About text styling*/
 .about {
-	font-family: 'Century Gothic', sans-serif;
+	font-family: 'ClearviewHwy', sans-serif;
 	position: relative;
 	width: 450px;
 	margin: 25px auto 0;
@@ -198,7 +198,7 @@ nav .start-contact,a:nth-child(5):hover~.animation {
 }
 
 .motto {
-	font-family: 'Century Gothic', sans-serif;
+	font-family: 'ClearviewHwy', sans-serif;
 	position: relative;
 	width: 450px;
 	margin: 25px auto 0;
