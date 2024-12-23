@@ -198,7 +198,7 @@ nav .start-contact,a:nth-child(5):hover~.animation {
 }
 
 .project-text {
-	font-family: 'Century Gothic', sans-serif;
+	font-family: 'ClearviewHwy', sans-serif;
 	position: relative;
 	width: 450px;
 	margin: 25px auto 0;
@@ -209,7 +209,7 @@ nav .start-contact,a:nth-child(5):hover~.animation {
 
 
 /*.btn {
-	font-family: 'Century Gothic', sans-serif;
+	font-family: 'ClearviewHwy', sans-serif;
 	width: 250px;
 	color: white;
 	display: flex;
@@ -219,7 +219,7 @@ nav .start-contact,a:nth-child(5):hover~.animation {
 
 .project-links {
 	color: white;
-	font-family: 'Century Gothic', sans-serif;
+	font-family: 'ClearviewHwy', sans-serif;
 	position: relative;
 	width: 450px;
 	margin: 25px auto 0;
