@@ -9,7 +9,7 @@ html {
 
 /*Headings styling*/
 h1.intro{
-	font-family: 'Century Gothic', sans-serif;
+	font-family: 'ClearviewHwy', sans-serif;
 	position: relative;
 	width: 450px;
 	margin: 250px auto 0;
@@ -18,7 +18,7 @@ h1.intro{
 }
 
 h3.intro{
-	font-family: 'Century Gothic', sans-serif;
+	font-family: 'ClearviewHwy', sans-serif;
 	position: relative;
 	width: 450px;
 	margin: 10px auto 0;
@@ -27,7 +27,7 @@ h3.intro{
 }
 
 h1.navigator{
-	font-family: 'Century Gothic', sans-serif;
+	font-family: 'ClearviewHwy', sans-serif;
 	margin: 0px auto 0;
 	width: 450px;
 	text-align: center;
@@ -35,7 +35,7 @@ h1.navigator{
 }
 
 h4.text {
-	font-family: 'Century Gothic', sans-serif;
+	font-family: 'ClearviewHwy', sans-serif;
 	position: relative;
 	width: 500px;
 	margin: 10px auto 0;
@@ -81,7 +81,7 @@ div {
 
 nav a{
 	font-size: 25px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'ClearviewHwy', sans-serif;
 	text-transform: uppercase;
 	color: white;
 	text-decoration: none;
@@ -196,7 +196,7 @@ nav .start-contact,a:nth-child(5):hover~.animation {
 
 /*Music releases grid styling*/
 .music-grid {
-	font-family: 'Century Gothic', sans-serif;
+	font-family: 'ClearviewHwy', sans-serif;
 	width: 800px;
 	margin: 25px auto 0;
 	color: #122726;
@@ -212,7 +212,7 @@ nav .start-contact,a:nth-child(5):hover~.animation {
 }
 
 .music-grid .box p{
-	font-family: 'Century Gothic', sans-serif;
+	font-family: 'ClearviewHwy', sans-serif;
 	font-size: 14px;
 	color: #122726;
 	text-align: left;
@@ -220,7 +220,7 @@ nav .start-contact,a:nth-child(5):hover~.animation {
 }
 
 .music-grid .box li{
-	font-family: 'Century Gothic', sans-serif;
+	font-family: 'ClearviewHwy', sans-serif;
 	font-size: 14px;
 	color: #122726;
 	text-align: left;
