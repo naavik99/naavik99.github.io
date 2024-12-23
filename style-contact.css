@@ -28,6 +28,7 @@ h3.intro{
 
 p.intro{
 	font-family: 'ClearviewHwy', sans-serif;
+	font-size: 14px;
 	position: relative;
 	width: 450px;
 	margin: 25px auto 0;
@@ -216,7 +217,8 @@ nav .start-home,a:nth-child(5):hover~.animation {
 
 .contact-links {
 	color: white;
-	font-family: 'Century Gothic', sans-serif;
+	font-family: 'ClearviewHwy', sans-serif;
+	font-size: 14px;
 	position: relative;
 	width: 450px;
 	margin: 25px auto 0;
