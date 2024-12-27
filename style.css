@@ -209,8 +209,8 @@ footer {
 	word-spacing: -2px;
 	position: fixed;
 	bottom: 0;
-	width: 450px;
-	margin: 100px auto 0;
+	width: 100%;
+	margin: auto;
 	text-align: center;
 	color: white;
 }
