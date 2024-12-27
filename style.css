@@ -207,7 +207,8 @@ footer {
 	font-size: 16px;
 	letter-spacing: -2px;
 	word-spacing: -2px;
-	position: relative;
+	position: fixed;
+	bottom: 0;
 	width: 450px;
 	margin: 100px auto 0;
 	text-align: center;
