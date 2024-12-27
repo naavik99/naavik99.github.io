@@ -200,3 +200,16 @@ nav .start-contact,a:nth-child(5):hover~.animation {
 	margin-right: auto;
 	width: 10%;
 }
+
+/* Footer styling */
+footer {
+	font-family: 'ClearviewHwy', sans-serif;
+	font-size: 16px;
+	letter-spacing: -2px;
+	word-spacing: -2px;
+	position: relative;
+	width: 450px;
+	margin: 100px auto 0;
+	text-align: center;
+	color: white;
+}
