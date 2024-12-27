@@ -207,6 +207,7 @@ nav .start-contact,a:nth-child(5):hover~.animation {
 	position: relative;
 	letter-spacing: -2px;
 	word-spacing: -2px;
+	font-size: 16px;
 	width: 450px;
 	margin: 25px auto 0;
 	text-align: center;
