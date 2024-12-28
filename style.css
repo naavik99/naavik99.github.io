@@ -204,7 +204,7 @@ nav .start-contact,a:nth-child(5):hover~.animation {
 /* Footer styling */
 footer {
 	font-family: 'ClearviewHwy', sans-serif;
-	font-size: 16px;
+	font-size: 12px;
 	letter-spacing: -2px;
 	word-spacing: -2px;
 	position: fixed;
